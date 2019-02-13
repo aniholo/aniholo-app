@@ -33,8 +33,6 @@ dependencies {
     implementation(project(":ui"))
 
     implementation(Deps.Kotlin.kotlin_std)
-    implementation(Deps.Android.compat)
-    implementation(Deps.Android.constraint_layout)
 
     testImplementation(Deps.Test.junit)
     androidTestImplementation(Deps.Test.runner)

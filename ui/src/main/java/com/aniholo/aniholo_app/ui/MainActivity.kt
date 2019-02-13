@@ -1,4 +1,4 @@
-package com.aniholo.aniholo_app
+package com.aniholo.aniholo_app.ui
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
