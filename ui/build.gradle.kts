@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.config.KotlinCompilerVersion
-
 plugins {
     id("com.android.library")
     kotlin("android")
@@ -30,7 +28,7 @@ android {
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 
-    implementation(kotlin("stdlib-jdk7", KotlinCompilerVersion.VERSION))
+    implementation(Deps.Kotlin.kotlin_std)
     implementation("com.android.support:appcompat-v7:28.0.0")
 
     testImplementation("junit:junit:4.12")

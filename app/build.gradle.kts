@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.config.KotlinCompilerVersion
-
 plugins {
     id("com.android.application")
     kotlin("android")
@@ -31,7 +29,7 @@ android {
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 
-    implementation(kotlin("stdlib-jdk7", KotlinCompilerVersion.VERSION))
+    implementation(Deps.Kotlin.kotlin_std)
     implementation("com.android.support:appcompat-v7:28.0.0")
     implementation("com.android.support.constraint:constraint-layout:1.1.3")
 

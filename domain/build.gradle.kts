@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.config.KotlinCompilerVersion
-
 plugins {
     id("java-library")
     kotlin("jvm")
@@ -13,7 +11,7 @@ java {
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 
-    implementation(kotlin("stdlib-jdk7", KotlinCompilerVersion.VERSION))
+    implementation(Deps.Kotlin.kotlin_std)
 
     testImplementation("junit:junit:4.12")
 }
