@@ -35,5 +35,6 @@ dependencies {
     implementation(Deps.Kotlin.kotlin_std)
 
     testImplementation(Deps.Test.junit)
+    androidTestImplementation(Deps.Test.android_junit)
     androidTestImplementation(Deps.Test.runner)
 }

@@ -1,7 +1,8 @@
 package com.aniholo.aniholo_app.data
 
-import androidx.test.InstrumentationRegistry
-import androidx.test.runner.AndroidJUnit4
+import android.content.Context
+import androidx.test.core.app.ApplicationProvider
+import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -16,9 +17,14 @@ class ExampleInstrumentedTest {
 
     @Test
     fun testPackageName() {
-        // Context of the app under test.
-        val appContext = InstrumentationRegistry.getTargetContext()
+        // arrange
+        val expectedPackageName = "com.aniholo.aniholo_app.data.test"
+        val appContext = ApplicationProvider.getApplicationContext<Context>()
 
-        assertEquals("com.aniholo.aniholo_app.data.test", appContext.packageName)
+        // act
+        val actualPackageName = appContext.packageName
+
+        // assert
+        assertEquals(expectedPackageName, actualPackageName)
     }
 }

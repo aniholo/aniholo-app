@@ -34,6 +34,7 @@ dependencies {
     implementation(Deps.Android.constraint_layout)
 
     testImplementation(Deps.Test.junit)
+    androidTestImplementation(Deps.Test.android_junit)
     androidTestImplementation(Deps.Test.runner)
     androidTestImplementation(Deps.Test.espresso)
 }
