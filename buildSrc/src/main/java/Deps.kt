@@ -6,13 +6,13 @@ object Deps {
     }
 
     object Android {
-        val compat = "com.android.support:appcompat-v7:28.0.0"
-        val constraint_layout = "com.android.support.constraint:constraint-layout:1.1.3"
+        val compat = "androidx.appcompat:appcompat:1.0.0"
+        val constraint_layout = "androidx.constraintlayout:constraintlayout:1.1.2"
     }
 
     object Test {
         val junit = "junit:junit:4.12"
-        val runner = "com.android.support.test:runner:1.0.2"
-        val espresso = "com.android.support.test.espresso:espresso-core:3.0.2"
+        val runner = "androidx.test:runner:1.1.0"
+        val espresso = "androidx.test.espresso:espresso-core:3.1.0"
     }
 }

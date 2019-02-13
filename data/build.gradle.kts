@@ -13,7 +13,7 @@ android {
         versionCode = Config.App.versionCode
         versionName = Config.App.versionName
 
-        testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
     }
 
