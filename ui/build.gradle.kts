@@ -29,7 +29,7 @@ dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 
     implementation(Deps.Kotlin.kotlin_std)
-    implementation("com.android.support:appcompat-v7:28.0.0")
+    implementation(Deps.Android.compat)
 
     testImplementation(Deps.Test.junit)
     androidTestImplementation(Deps.Test.runner)
