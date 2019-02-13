@@ -30,7 +30,6 @@ dependencies {
 
     implementation(Deps.Kotlin.kotlin_std)
 
-    testImplementation("junit:junit:4.12")
-    androidTestImplementation("com.android.support.test:runner:1.0.2")
-    androidTestImplementation("com.android.support.test.espresso:espresso-core:3.0.2")
+    testImplementation(Deps.Test.junit)
+    androidTestImplementation(Deps.Test.runner)
 }

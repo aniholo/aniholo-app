@@ -13,5 +13,5 @@ dependencies {
 
     implementation(Deps.Kotlin.kotlin_std)
 
-    testImplementation("junit:junit:4.12")
+    testImplementation(Deps.Test.junit)
 }
