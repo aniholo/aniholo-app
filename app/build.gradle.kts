@@ -5,15 +5,15 @@ plugins {
 }
 
 android {
-    compileSdkVersion(28)
+    compileSdkVersion(Config.Build.compileSdk)
 
     defaultConfig {
-        minSdkVersion(19)
-        targetSdkVersion(28)
+        minSdkVersion(Config.Build.minSdk)
+        targetSdkVersion(Config.Build.targetSdk)
 
-        applicationId = "com.aniholo.aniholo_app"
-        versionCode = 1
-        versionName = "1.0"
+        applicationId = Config.App.appId
+        versionCode = Config.App.versionCode
+        versionName = Config.App.versionName
 
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }
