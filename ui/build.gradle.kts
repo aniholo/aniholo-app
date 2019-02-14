@@ -30,6 +30,7 @@ dependencies {
     implementation(project(":domain"))
 
     implementation(Deps.Kotlin.kotlin_std)
+    implementation(Deps.DI.koin_android)
     implementation(Deps.Android.compat)
     implementation(Deps.Android.constraint_layout)
 

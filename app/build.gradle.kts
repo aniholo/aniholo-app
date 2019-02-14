@@ -39,6 +39,7 @@ dependencies {
     implementation(project(":ui"))
 
     implementation(Deps.Kotlin.kotlin_std)
+    implementation(Deps.DI.koin_android)
 
     testImplementation(Deps.Test.junit)
     androidTestImplementation(Deps.Test.android_junit)

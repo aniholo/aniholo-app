@@ -5,6 +5,12 @@ object Deps {
         val kotlin_std = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$version"
     }
 
+    object DI {
+        val version = "1.0.2"
+        val koin = "org.koin:koin-core:$version"
+        val koin_android = "org.koin:koin-android:$version"
+    }
+
     object Android {
         val compat = "androidx.appcompat:appcompat:1.0.0"
         val constraint_layout = "androidx.constraintlayout:constraintlayout:1.1.2"
